@@ -1,0 +1,28 @@
+{
+    "SVC": {
+        "C": [0.1, 1, 10],
+        "kernel": ["linear", "rbf"],
+        "gamma": [0.1, 1, 10, "scale"]
+    },
+    "DecisionTree": {
+        "max_depth": [null, 10, 20, 30],
+        "min_samples_split": [2, 5, 10],
+        "min_samples_leaf": [1, 2, 4],
+        "max_features": ["auto", "sqrt"],
+        "criterion": ["gini", "entropy"]
+    },
+    "RandomForest":{
+        "n_estimators": [100, 200, 300],
+        "max_depth": [null, 10, 20, 30],
+        "min_samples_split": [2, 5, 10],
+        "min_samples_leaf": [1, 2, 4],
+        "max_features": ["auto", "sqrt"],
+        "class_weight": ["balanced", null]
+    },
+    "Xgboost": {
+        "n_estimators": [100, 200, 300],
+        "max_depth": [3, 5, 10, null],
+        "learning_rate": [0.001, 0.01, 0.1],
+        "gamma": [1, 0, 0.1, 0.01]
+    }
+}
